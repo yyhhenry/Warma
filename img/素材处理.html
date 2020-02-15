@@ -18,7 +18,7 @@
 					let reader=new FileReader();
 					reader.onload = function(ev){
 						let imgSrc=ev.target.result;
-						baseViewer.innerText=imgSrc;
+						baseViewer.innerText='请复制图片地址';
 						viewer.src=imgSrc;
 					}
 					reader.readAsDataURL(file);
